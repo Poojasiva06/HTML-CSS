@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+    <style>
+        #table{
+    border: 2px double black;
+    border-collapse: collapse;
+    font-family: monospace;
+}
+tr td{
+    border: 1px solid black;
+    padding: 4px 10px;
+}
+th{
+    border: 1px solid black;
+    padding: 6px 15px;
+    background-color:rgb(119, 119, 228);
+    color: white;
+}
+tr:nth-child(even){
+    background-color:lightsteelblue;
+}
+tr:hover{
+    background-color: grey;
+    color: wheat;
+}
+button{
+    background-color: brown;
+}
+body{
+    background-color: rgb(205, 205, 242);
+}
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Details</h1>
+    <table id="table1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>EDUCATION</th>
+                <th>NAME</th>
+                <th>SUR NAME</th>
+                <th>AGE</th>
+                <th>DELETE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>SVM MHSS</td>
+                <td>Pooja </td>
+                <td>Sivakumar</td>
+                <td>22</td>
+                <td><button><input type="button" value="Delete"></button></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Adhiyaman MHSS</td>
+                <td>Pavithra</td>
+                <td>Srinivasan</td>
+                <td>22</td>
+                <td><button><input type="button" value="Delete"></button></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Velammal MHSS</td>
+                <td>Pawan</td>
+                <td>Kumar</td>
+                <td>22</td>
+                <td><button><input type="button" value="Delete"></button></td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Donbosco MHSS</td>
+                <td>Shanmugapriya</td>
+                <td>Sivanesan</td>
+                <td>22</td>
+                <td><button><input type="button" value="Delete"></button></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Charles MHSS</td>
+                <td>Shailesh</td>
+                <td>Ravikumar</td>
+                <td>22</td>
+                <td><button><input type="button" value="Delete"></button></td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>SVM MHSS</td>
+                <td>Srinath</td>
+                <td>Maheshwaran</td>
+                <td>22</td>
+                <td><button><input type="button" value="Delete"></button></td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>SVM MHSS</td>
+                <td>Thilagan</td>
+                <td>Selvakumar</td>
+                <td>22</td>
+                <td><button><input type="button" value="Delete"></button></td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>Adhiyaman MHSS</td>
+                <td>Dharshan</td>
+                <td>Ravikumar</td>
+                <td>22</td>
+                <td><button><input type="button" value="Delete"></button></td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+</body>
+</html>
