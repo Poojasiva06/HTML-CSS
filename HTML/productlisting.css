@@ -13,8 +13,10 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
     padding: 15px 20px;
     color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
     left: 0;
@@ -51,8 +53,8 @@ h1 {
 }
 
 .nav-links a:hover {
-    background: rgba(0, 0, 0, 0.3);
-    color: #4422cb;
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
 }
 
 .product-list {
@@ -95,4 +97,38 @@ h1 {
 .product-list .price {
     font-weight: bold;
     color: #e44d26;
+}
+
+/* Image Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 }
